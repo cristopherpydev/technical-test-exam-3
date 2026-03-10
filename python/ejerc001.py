@@ -15,7 +15,12 @@ users = [
 ]
 '''
 
-def diccionarios_sin_duplica(lista_diccionario:list[dict])->dict:
+def diccionarios_sin_duplica(lista_diccionario:list[dict])->list:
+    '''Función que toma como parámetro una lista de diccionarios y devuelve una lista aplanada.
+    
+    El aplanamiento consiste esencialmente en la unificación de usuarios QUE ESTÁN DUPLICADOS; en cambiar a lower case los mails y en
+    mantener el primer nombre (append) encontrado entre ciclos iterativos.'''
+    
     lista_auxiliar = []
     for elemento in lista_diccionario:
         if elemento["email"] not in lista_auxiliar:
