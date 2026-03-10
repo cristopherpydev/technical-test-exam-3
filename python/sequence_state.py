@@ -11,7 +11,7 @@
 "mixed" en cualquier otro caso'''
 
 def determinar_aumento_descenso_mixed(lista_numerica:list[int])->str:
-    '''Si el número está en aumento significa que los diferentes números de las posiciones de la lista son crecientes'''
+    '''Si el número está en aumento significa que los diferentes números de las posiciones de la lista son crecientes. Si por el contrario va descendiendo, está decrementando. Si hay variaciones, está compuesto.'''
     numero = 0
     numero_anterior = 0
     es_creciente = False
